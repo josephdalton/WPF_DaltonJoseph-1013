@@ -8,7 +8,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="5b5fd65a-863c-4afc-b0a3-e4c226c1d9aa" time="1382970755582" ignored="false" />
     <file path="/index.html" changelist="5b5fd65a-863c-4afc-b0a3-e4c226c1d9aa" time="1382971789431" ignored="false" />
-    <file path="/day1_variables.js" changelist="5b5fd65a-863c-4afc-b0a3-e4c226c1d9aa" time="1382975266764" ignored="false" />
+    <file path="/day1_variables.js" changelist="5b5fd65a-863c-4afc-b0a3-e4c226c1d9aa" time="1382976962267" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +40,7 @@
       <file leaf-file-name="day1_variables.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/day1_variables.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="493" selection-end="493" vertical-scroll-proportion="0.557423">
+            <state line="27" column="10" selection-start="524" selection-end="524" vertical-scroll-proportion="0.67507005">
               <folding />
             </state>
           </provider>
@@ -261,7 +261,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/day1_variables.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="493" selection-end="493" vertical-scroll-proportion="0.557423">
+        <state line="27" column="10" selection-start="524" selection-end="524" vertical-scroll-proportion="0.67507005">
           <folding />
         </state>
       </provider>
