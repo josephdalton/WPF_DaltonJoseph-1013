@@ -11,9 +11,25 @@
 
 
 var name;
-name ='Joseph Dalton';
+name ='Joseph Dalton'; //string example
+var age = 37; //number example
+var pet = 'Apollo';
+var petAge = '7';
 
-console.log(name);
+
+console.log(age);
+age = age +1;
+console.log(age);
+age = age  -10;
+console.log(age);
+age = age*2;
+console.log(age);
+
+console.log(parseInt(petAge) + Number(age) + age*1);
+
+
+
+
 
 
 
