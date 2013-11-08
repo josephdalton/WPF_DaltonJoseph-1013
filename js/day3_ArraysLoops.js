@@ -69,14 +69,36 @@
 //console.log(arr[2]);
 //console.log(arr[3]);
 
-for(i=0;i<=2;i=i+1){
-    for(j=0;j<=2;j++) {
-        console.log('['+i +']['+j+']');
+//for(i=0;i<=2;i=i+1){
+//    for(j=0;j<=2;j++) {
+//        console.log('['+i +']['+j+']');
+//
+//    }
+//
+//
+//
+//}
+ var arr=[];
+arr[0]=[];
+arr[1]=[];
+arr[2]=[];
+arr[3]=[];
 
-    }
+arr[0][0]=1;
+arr[0][1]=2;
+arr[0][2]=3;
+arr[0][3]=4;
 
+arr[1][0]=2;
+arr[2][0]=3;
+arr[3][0]=4;
 
+for(i=1;i<=3;i++){
 
+    for(j=1;j<=3;j++){
+    console.log(i+':'+j);
+    arr[i][j]=arr[0][i]*arr[j][0];
+
+   }
+    console.log(arr[i]);
 }
-
-
