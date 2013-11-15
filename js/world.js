@@ -32,22 +32,6 @@ function createWorld(){
 }
 
 
-//console.log(world[o]);
-/*
- Forest
- Swamp
- Desert
- Mountain
- */
-//
-var world1= createWorld();
-var world2= createWorld();
-console.log('*****UGLY VERSION*****')
-for(i=0;i<world1.length;i++){
-        console.log(world1[i]);
-  }
-
-
   function worldDisplay(worldArray){
       //input world array from the creation
       //Make this into a formatted grid with even spacing
@@ -55,11 +39,15 @@ for(i=0;i<world1.length;i++){
       for(i=0;i<worldArray.length;i++){
           for(j=0;j<worldArray[i].length;j++)
           {
-
-
-
               formattedResult+= worldArray[i][j] +' ';
-
+              if(worldArray[i][j].length==0){formattedResult+='        '}
+              if(worldArray[i][j].length==1){formattedResult+='       '}
+              if(worldArray[i][j].length==2){formattedResult+='      '}
+              if(worldArray[i][j].length==3){formattedResult+='     '}
+              if(worldArray[i][j].length==4){formattedResult+='    '}
+              if(worldArray[i][j].length==5){formattedResult+='   '}
+              if(worldArray[i][j].length==6){formattedResult+='  '}
+              if(worldArray[i][j].length==7){formattedResult+=' '}
           }
           formattedResult+='\n';
       }
@@ -70,7 +58,20 @@ for(i=0;i<world1.length;i++){
     //output the formatted version of the world array
   }
 
+
+var world1= createWorld();
+
 console.log(worldDisplay(world1));
+
+console.log(world1[1][1]);
+
+
+var userInput=prompt('Which direction would you like to move? (N,S,E,W,Q)');
+if(userInput=='N'){console.log(world1[0][1]);}
+
+
+
+
 
 
 
