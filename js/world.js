@@ -32,13 +32,16 @@ function createWorld(){
 }
 
 
-  function worldDisplay(worldArray){
+  function worldDisplay(worldArray,xyz,yyy){
+      console.clear();
       //input world array from the creation
       //Make this into a formatted grid with even spacing
       var formattedResult='';
       for(i=0;i<worldArray.length;i++){
           for(j=0;j<worldArray[i].length;j++)
           {
+              if(i==yyy &&j==xyz){ formattedResult+='<******> '}
+              else{
               formattedResult+= worldArray[i][j] +' ';
               if(worldArray[i][j].length==0){formattedResult+='        '}
               if(worldArray[i][j].length==1){formattedResult+='       '}
@@ -48,11 +51,9 @@ function createWorld(){
               if(worldArray[i][j].length==5){formattedResult+='   '}
               if(worldArray[i][j].length==6){formattedResult+='  '}
               if(worldArray[i][j].length==7){formattedResult+=' '}
-          }
+          }        }
           formattedResult+='\n';
       }
-
-
       return formattedResult;
 
     //output the formatted version of the world array
@@ -61,13 +62,44 @@ function createWorld(){
 
 var world1= createWorld();
 
-console.log(worldDisplay(world1));
-
-console.log(world1[1][1]);
 
 
-var userInput=prompt('Which direction would you like to move? (N,S,E,W,Q)');
-if(userInput=='N'){console.log(world1[0][1]);}
+var quitTest = true;
+var x=1;
+var y=1;
+console.log(worldDisplay(world1,x,y));
+do
+  {//do this stuff
+    var userInput=prompt('Which direction would you like to move? (N,S,E,W,Q)');
+
+      if(userInput==null){quitTest=false;
+          break;}
+      if(userInput.toUpperCase()=='Q'){quitTest=false;}
+      else {
+          if(userInput.toUpperCase()=='N'){y--;}
+          if(userInput.toUpperCase()=='S'){y++;}
+          if(userInput.toUpperCase()=='W'){x--;}
+          if(userInput.toUpperCase()=='E'){x++;}
+          if(x<0){x=9;}
+          if(x>9){x=0;}
+          if(y<0){y=9;}
+          if(y>9){y=0;}
+          console.log(worldDisplay(world1,x,y));
+      }
+}  while(quitTest);  //this is true
+
+
+/*
+* Example,
+* eXample
+* EXample
+*
+* */
+
+
+
+
+
 
 
 
